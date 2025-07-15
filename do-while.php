@@ -13,7 +13,7 @@ do {
 
 
 
-challenge 1
+//challenge 1
 do {
     echo " Enter a Number : ";
     $userInput = trim(fgets(STDIN));

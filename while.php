@@ -4,7 +4,7 @@ $guessattempts = 0;
 $maxAttempts = 5;
 
 while ($guessattempts < $maxAttempts) {
-    echo "Welcome 😁, Guess the password to win the Lottery 😉: ";
+    echo "Guess the password to win the Lottery 😉: ";
     $user_guess = trim(fgets(STDIN));
     $guessattempts++;
 
