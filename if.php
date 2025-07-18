@@ -23,22 +23,22 @@
 // }
 
 
-// // nested comditional statement(Control Structure)
-// $num = 13;
-// if($num > 0){
-//     if($num % 2 == 0 ){
-//         echo "\nPostive Even Number\n"  ;
-//     } else{
-//         echo "\nPostive Odd Number\n";
-//     }
+// nested comditional statement(Control Structure)
+$num = 13;
+if($num > 0){
+    if($num % 2 == 0 ){
+        print "\nPostive Even Number\n"  ;
+    } else{
+        print "\nPostive Odd Number\n";
+    }
 
-// } else{
-//     echo "\nIs a Negative Number\n";
-// }
+} else{
+    print "\nIs a Negative Number\n";
+}
 
-// $userName = "admin";
-// $password = "passwrd123";
-// if($userName == "admin" && $password == "password123"){
-//     echo "You've Sucessfully logined ";
-// } else
-//     echo "Wrong Details please try again";
+$userName = "admin";
+$password = "passwrd123";
+if($userName == "admin" && $password == "password123"){
+    print "You've Sucessfully logined ";
+} else
+    print "Wrong Details please try again";

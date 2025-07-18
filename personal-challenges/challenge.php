@@ -27,8 +27,9 @@ $barcelonaSquad = [
     "Cancelo"
 ];
 
-function generateLineup($clubName, array $clubPlayers) {
-    echo "CLUB: ". strtoupper($clubName) . "\n\n";
+function generateLineup($clubName, array $clubPlayers)
+{
+    echo "CLUB: " . strtoupper($clubName) . "\n\n";
 
     shuffle($clubPlayers);
 
@@ -52,3 +53,37 @@ function generateLineup($clubName, array $clubPlayers) {
 
 
 generateLineup("Barcelona", $barcelonaSquad);
+
+
+// generate couple of random numbers
+
+function GenerateRandomNumber(int $input)
+{
+    $result = [];
+    $attempts = 0;
+    while (count($result) < $input) {
+        $attempts++;
+        echo "Looking for an even number...\n";
+        $randNum = random_int(1, 100);
+        if ($randNum % 2 == 0) {
+            $result[] = $randNum;
+            echo "found one : $randNum\n";
+        }
+    }
+    return [
+        "numbers" => $result,
+        "attempts" => $attempts
+
+    ];
+}
+$output = GenerateRandomNumber(7);
+// var_dump($output);
+echo "\nAll Even Numbers Found:\n";
+foreach ($output["numbers"] as $number) {
+    echo "$number\n";
+}
+echo "it took {$output["attempts"]} attempts\n";
+
+
+
+
