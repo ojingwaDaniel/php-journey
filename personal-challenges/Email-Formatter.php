@@ -12,15 +12,14 @@ function EmailFormatter($input)
             $count++;
         }
     }
-
 }
 $output = EmailFormatter(7);
 $allEven = [];
 echo "// All Even Numbers //";
-foreach($output as $number){
-    $padNum = str_pad($number,10,"-",STR_PAD_BOTH);
+foreach ($output as $number) {
+    $padNum = str_pad($number, 10, "-", STR_PAD_BOTH);
     echo "$padNum\n";
-    $allEven[]= $number;
-} 
-$csv = implode(",",$allEven);
+    $allEven[] = $number;
+}
+$csvFormat = implode(",", $allEven);
 echo "CSV Format : $csv\n";
